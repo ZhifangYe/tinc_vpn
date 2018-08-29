@@ -3,7 +3,7 @@ FROM ubuntu:xenial
 # Prepare environment
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -yq build-essential libncurses5-dev libreadline6-dev libzlcore-dev zlib1g-dev liblzo2-dev libssl-dev
+    apt-get install -yq build-essential libncurses5-dev libreadline6-dev libzlcore-dev zlib1g-dev liblzo2-dev libssl-dev curl wget
 
 # Install tinc
 RUN mkdir -p tinc && \
