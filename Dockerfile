@@ -13,7 +13,8 @@ RUN mkdir -p tinc && \
     make && \
     make install && \
     cd .. && \
-    rm -r tinc
+    rm -r tinc && \
+    mkdir -p /usr/local/var/run
 
 EXPOSE 655/tcp 655/udp
 VOLUME /usr/local/etc/tinc
